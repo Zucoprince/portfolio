@@ -1,0 +1,57 @@
+@media screen and (max-width: 480px) {
+  .container_all {
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    height: 550px;
+    width: 90%;
+    overflow: auto;
+  }
+
+  .container_main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 500px;
+  }
+
+  .container_showcase {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container_showcase span {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+  }
+
+  .showcase {
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: 65%;
+    border: 2px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    cursor: pointer;
+  }
+
+  .showcase:hover {
+    transform: scale(105%);
+  }
+
+  .showcase img {
+    width: 110%;
+    height: 100%;
+  }
+}

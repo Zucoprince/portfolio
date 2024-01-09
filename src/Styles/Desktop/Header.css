@@ -1,0 +1,142 @@
+@import url('https://fonts.cdnfonts.com/css/jomolhari-3');
+
+.header_on {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(18, 19, 31);
+  height: 100%;
+  width: 20%;
+  color: rgb(225, 225, 225);
+}
+
+.container_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  background-color: #cee2ef;
+  width: 100%;
+  height: 6%;
+  color: #1d1d1e;
+}
+
+.container_image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 40%;
+}
+
+.container_image div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px rgb(225, 225, 225) solid;
+  background-color: transparent;
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  box-shadow: #e1eef7 0px 20px 30px -10px;
+}
+
+.container_image span {
+  margin-top: 10%;
+  font-size: 24px;
+}
+
+.container_image img {
+  width: 80%;
+}
+
+.container_info {
+  font-family: 'Jomolhari', sans-serif;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  height: 100%;
+  background-color: rgb(206, 226, 239);
+  color: #1d1d1e;
+}
+
+.container_info::before {
+  content: "";
+  position: absolute;
+  top: -6%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translate(-50%,50%);
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 30px solid rgb(206, 226, 239);
+}
+
+.container_info_data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.container_info_webs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+  position: relative;
+}
+
+.container_info_webs img {
+  width: 40px;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s;
+}
+
+.container_info_webs img:hover {
+  transform: scale(120%);
+}
+
+#tec {
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+
+@media screen and (max-width: 1280px) {
+  .container_image div {
+    width: 90px;
+    height: 90px;
+  }
+
+  .container_image span {
+    margin-top: 10%;
+    font-size: calc(10px + 0.5vw);
+  }
+
+  .container_info_data span {
+    font-size: 13px;
+  }
+
+  .container_info_webs img {
+    width: 24px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.3s;
+  }
+
+  #tec {
+    text-align: center;
+  }
+}
