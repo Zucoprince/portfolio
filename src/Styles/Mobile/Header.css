@@ -1,4 +1,6 @@
 @media screen and (max-width: 480px) {
+  @import url('https://fonts.cdnfonts.com/css/jomolhari-3');
+
   .header_on {
     position: absolute;
     height: 100%;
@@ -47,8 +49,18 @@
     width: 80%;
   }
 
+  .container_info::before {
+    z-index: -1;
+  }
+
+  .container_info {
+    font-family: 'Jomolhari', sans-serif;
+    font-size: 10px;
+  }
+
   .container_info_webs {
-    margin-bottom: 10%;
+    margin-bottom: 8%;
+    gap: 10px;
   }
 
   .container_info_webs img {

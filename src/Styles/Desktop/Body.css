@@ -6,7 +6,8 @@ body {
   overflow: auto;
 }
 
-.button-interrogacao {
+@media screen and (min-width: 480px) {
+.button_interrogacao {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,27 +29,28 @@ body {
   animation: expe-out 0.5s forwards;
 }
 
-.button-interrogacao:hover {
+.button_interrogacao:hover {
   background-color: #2c2f46;
   color: #f9fafb;
   animation: expe 0.5s forwards;
 }
 
-.button-interrogacao img {
+.button_interrogacao img {
   width: 50%;
   animation: scape-off 0.8s forwards;
 }
 
-.button-interrogacao span {
+.button_interrogacao span {
   font-size: 0;
 }
 
-.button-interrogacao:hover img {
+.button_interrogacao:hover img {
   animation: scape 0.3s forwards;
 }
 
-.button-interrogacao:hover span {
+.button_interrogacao:hover span {
   animation: azzo 0.5s forwards 0.3s;
+}
 }
 
 @keyframes expe {

@@ -15,7 +15,7 @@ export default function Body() {
   return (
     <body>
       <button
-        className="button-interrogacao"
+        className="button_interrogacao"
         onClick={() => {
           window.open("https://github.com/Zucoprince/portfolio", "_blank");
         }}
